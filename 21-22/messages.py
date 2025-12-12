@@ -1,4 +1,32 @@
-# messages.py
+"""
+Централизованный словарь сообщений (MESSAGES) для всего приложения.
+
+Messages содержит тексты заголовков, пунктов меню, подсказок и сообщений об ошибках
+для главного меню и для каждого задания (task3, task4, task8).
+
+Структура
+---------
+MESSAGES : dict
+    Словарь верхнего уровня с ключами:
+    - "main_menu" : dict
+        - "title" : str
+        - "options" : list[str]
+        - "prompt" : str
+        - "invalid" : str
+        - "exit" : str
+    - "task3" : dict
+        - "title", "menu", "prompt", "input_error", "rotation_done", "no_matrix", "no_result", "invalid_choice"
+    - "task4" : dict
+        - "title", "menu", "prompt", "input_error", "operation_done", "no_data", "no_result", "invalid_choice"
+    - "task8" : dict
+        - "title", "menu", "prompt", "input_error", "algorithm_done", "no_data", "no_result", "invalid_choice"
+
+Пример
+-------
+>>> from messages import MESSAGES
+>>> print(MESSAGES['main_menu']['title'])
+=== ГЛАВНОЕ МЕНЮ ===
+"""
 
 class Messages:
     """Централизованные сообщения для всех меню и FSM."""
