@@ -104,21 +104,21 @@ class MatrixServer(threading.Thread):
             params = request.get('params', {})
             callback = request.get('callback')
 
-            logger.info(f"{client}: получен запрос на {self._task_name(task)}")
+            logger.info(f"Сервер {client}: получен запрос на {self._task_name(task)}")
 
-            # Печать входных данных в лог
-            if task == 'rotate':
-                logger.info(f"{client}: входная матрица:")
-                for row in data:
-                    logger.info(row)
-            elif task == 'bigint':
-                a = data.get('a')
-                b = data.get('b')
-                logger.info(f"{client}: входные большие числа (массивы цифр): A={a} B={b}")
-            elif task == 'common':
-                a = data.get('a')
-                b = data.get('b')
-                logger.info(f"{client}: входные массивы для поиска общих чисел: A={a} B={b}")
+            # # Печать входных данных в лог
+            # if task == 'rotate':
+            #     logger.info(f"Сервер {client}: входная матрица:")
+            #     for row in data:
+            #         logger.info(row)
+            # elif task == 'bigint':
+            #     a = data.get('a')
+            #     b = data.get('b')
+            #     logger.info(f"Сервер {client}: входные большие числа (массивы цифр): A={a} B={b}")
+            # elif task == 'common':
+            #     a = data.get('a')
+            #     b = data.get('b')
+            #     logger.info(f"Сервер {client}: входные массивы для поиска общих чисел: A={a} B={b}")
 
             # эмуляция времени обработки
             process_time = random.uniform(0.6, 2.2)
@@ -129,6 +129,7 @@ class MatrixServer(threading.Thread):
                 if task == 'rotate':
                     direction = params.get('direction', 'cw')
                     result = rotate_matrix(data, direction=direction)
+                    logger.info(f"Сервер {client}: Направление: {direction}")
                 elif task == 'bigint':
                     op = params.get('op', 'add')
                     result = add_or_sub_bigints(data['a'], data['b'], op=op)
@@ -141,10 +142,10 @@ class MatrixServer(threading.Thread):
                 logger.exception("Ошибка при обработке запроса")
 
             self.processed += 1
-            logger.info(f"{client}: выполнен {self._task_name(task)} (время={process_time:.2f}s)")
+            logger.info(f"Сервер {client}: выполнен {self._task_name(task)} (время={process_time:.2f}s)")
 
             # ПОЛНЫЙ вывод результата в лог
-            self._print_result(task, result)
+            # self._print_result(task, result)
 
             # вызвать callback у клиента (передаём также входные данные для удобства)
             if callable(callback):
@@ -165,22 +166,22 @@ class MatrixServer(threading.Thread):
         }
         return mapping.get(task_key, task_key)
 
-    def _print_result(self, task, result):
-        if task == 'rotate':
-            logger.info("Результат поворота:")
-            if isinstance(result, list):
-                for row in result:
-                    logger.info(row)
-            else:
-                logger.info(result)
-        elif task == 'bigint':
-            logger.info("Результат операции (цифры msb..lsb): %s", result)
-            try:
-                num = int(''.join(map(str, result)))
-                logger.info("Результат как число: %s", num)
-            except Exception:
-                pass
-        elif task == 'common':
-            logger.info("Результат подсчёта общих чисел: %s", result)
-        else:
-            logger.info("Результат: %s", result)
+    # def _print_result(self, task, result):
+    #     if task == 'rotate':
+    #         logger.info("Результат поворота:")
+    #         if isinstance(result, list):
+    #             for row in result:
+    #                 logger.info(row)
+    #         else:
+    #             logger.info(result)
+    #     elif task == 'bigint':
+    #         logger.info("Результат операции (цифры msb..lsb): %s", result)
+    #         try:
+    #             num = int(''.join(map(str, result)))
+    #             logger.info("Результат как число: %s", num)
+    #         except Exception:
+    #             pass
+    #     elif task == 'common':
+    #         logger.info("Результат подсчёта общих чисел: %s", result)
+    #     else:
+    #         logger.info("Результат: %s", result)
