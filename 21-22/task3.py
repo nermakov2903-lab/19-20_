@@ -130,7 +130,8 @@ def _show_result(state_container):
 def _back(state_container):
     logger.info("task3: back requested (return to main)")
 
-# Action map: имя -> функция
+#словарь действий (имена → функции)
+#handler - Это функция, которая выполняет одно конкретное действие, соответствующее пункту меню(внутри словаря)
 ACTION_MAP = {
     "input_matrix": _input_matrix,
     "generate_matrix": _generate_matrix,
@@ -142,7 +143,8 @@ ACTION_MAP = {
 
 # -----------------------------
 # TRANSITIONS: state -> { choice -> { action / error / next } }
-
+#словарь состояний
+#action - метки, по которому FSM выбирает нужный handler(внутри словаря)
 TRANSITIONS = {
     "NO_DATA": {
         "1": {"action": "input_matrix", "next": "HAS_DATA"},
