@@ -42,6 +42,8 @@ Examples
 - Подпроцессы task3, task4, task8 должны экспортировать функции taskN_menu().
 """
 
+
+#карта переходов(логика)
 MAIN_FSM = {
     "MAIN": {
         "1": {"action": "task3"},
@@ -69,6 +71,8 @@ def do_exit():
     logger.info("Приложение завершено пользователем")
     return False
 
+
+#словарь обработчиков, выполнение функций
 ACTION_MAP = {
     "task3": do_task3,
     "task4": do_task4,
