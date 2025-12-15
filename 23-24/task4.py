@@ -94,5 +94,7 @@ def task4_fsm():
                 result = big_number_operation(a, b, op)
                 print(msgs["operation_done"])
                 state = "HAS_RESULT"
+                logger.info(f"operation: {op}")
             elif choice == "4":
                 print("Результат:", result if result else msgs["no_result"])
+                logger.info(f"result shown")

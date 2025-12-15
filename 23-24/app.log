@@ -1,32 +1,32 @@
-2025-12-12 13:48:18,147 - INFO - MAIN choice: 1
-2025-12-12 13:48:18,148 - INFO - → Переход в task3
-2025-12-12 13:48:19,460 - INFO - task3 choice: 2 (state=NO_DATA)
-2025-12-12 13:48:22,010 - INFO - task3: generated matrix 3x3
-2025-12-12 13:48:24,851 - INFO - task3 choice: 3 (state=HAS_DATA)
-2025-12-12 13:48:26,769 - INFO - task3: rotated matrix (clockwise)
-2025-12-12 13:48:28,948 - INFO - task3 choice: 4 (state=HAS_RESULT)
-2025-12-12 13:48:28,948 - INFO - task3: result shown
-2025-12-12 15:04:54,274 - INFO - MAIN choice: 2
-2025-12-12 15:04:54,274 - INFO - → Переход в task4
-2025-12-12 15:04:56,328 - INFO - task4 choice: 2 (state=NO_DATA)
-2025-12-12 15:04:57,750 - INFO - task4: arrays generated
-2025-12-12 15:04:59,063 - INFO - task4 choice: 3 (state=HAS_DATA)
-2025-12-12 15:05:01,798 - INFO - task4: operation performed
-2025-12-12 15:05:03,484 - INFO - task4 choice: 4 (state=HAS_RESULT)
-2025-12-12 15:05:03,485 - INFO - task4: result shown
-2025-12-12 15:05:06,976 - INFO - task4 choice: 4 (state=HAS_RESULT)
-2025-12-12 15:05:06,976 - INFO - task4: result shown
-2025-12-12 15:05:10,780 - INFO - task4 choice: 5 (state=HAS_RESULT)
-2025-12-12 15:05:10,780 - INFO - task4: back requested
-2025-12-12 15:05:10,781 - INFO - task4: returning to main
-2025-12-12 15:05:12,034 - INFO - MAIN choice: 2
-2025-12-12 15:05:12,034 - INFO - → Переход в task4
-2025-12-12 15:05:13,422 - INFO - task4 choice: 4 (state=NO_DATA)
-2025-12-12 15:05:13,422 - WARNING - task4 attempted show without result
-2025-12-12 15:05:16,549 - INFO - task4 choice: 3 (state=NO_DATA)
-2025-12-12 15:05:16,549 - WARNING - task4 attempted action with no data
-2025-12-12 15:05:18,737 - INFO - task4 choice: 5 (state=NO_DATA)
-2025-12-12 15:05:18,737 - INFO - task4: back requested
-2025-12-12 15:05:18,737 - INFO - task4: returning to main
-2025-12-12 15:05:20,314 - INFO - MAIN choice: 4
-2025-12-12 15:05:20,314 - INFO - Приложение завершено пользователем
+2025-12-15 16:47:22,429 - INFO - MAIN choice: 1
+2025-12-15 16:47:23,575 - INFO - task3 choice=2, state=NO_DATA
+2025-12-15 16:47:26,616 - INFO - task3 choice=3, state=HAS_DATA
+2025-12-15 16:47:30,517 - INFO - rotation: clockwise
+2025-12-15 16:47:31,448 - INFO - task3 choice=4, state=HAS_RESULT
+2025-12-15 16:47:32,760 - INFO - task3 choice=5, state=HAS_RESULT
+2025-12-15 16:47:33,412 - INFO - MAIN choice: 2
+2025-12-15 16:47:34,606 - INFO - task4 choice=2, state=NO_DATA
+2025-12-15 16:47:36,889 - INFO - task4 choice=3, state=HAS_DATA
+2025-12-15 16:47:38,319 - INFO - operation: add
+2025-12-15 16:47:39,767 - INFO - task4 choice=4, state=HAS_RESULT
+2025-12-15 16:47:39,767 - INFO - result shown
+2025-12-15 16:47:41,116 - INFO - task4 choice=5, state=HAS_RESULT
+2025-12-15 16:47:43,379 - INFO - MAIN choice: 3
+2025-12-15 16:47:44,348 - INFO - task8 choice=2, state=NO_DATA
+2025-12-15 16:47:45,546 - INFO - task8 choice=3, state=HAS_DATA
+2025-12-15 16:47:45,546 - INFO - algoritm complete
+2025-12-15 16:47:47,472 - INFO - task8 choice=4, state=HAS_RESULT
+2025-12-15 16:47:47,472 - INFO - result shown
+2025-12-15 16:47:57,035 - INFO - task8 choice=1, state=HAS_RESULT
+2025-12-15 16:51:01,345 - INFO - MAIN choice: 3
+2025-12-15 16:51:02,047 - INFO - task8 choice=1, state=NO_DATA
+2025-12-15 16:51:13,582 - INFO - task8 choice=3, state=HAS_DATA
+2025-12-15 16:51:13,582 - INFO - algoritm complete
+2025-12-15 16:51:15,263 - INFO - task8 choice=4, state=HAS_RESULT
+2025-12-15 16:51:15,263 - INFO - result shown
+2025-12-15 16:51:47,632 - INFO - MAIN choice: 3
+2025-12-15 16:51:51,208 - INFO - task8 choice=1, state=NO_DATA
+2025-12-15 16:52:04,699 - INFO - task8 choice=3, state=HAS_DATA
+2025-12-15 16:52:04,699 - INFO - algoritm complete
+2025-12-15 16:52:06,005 - INFO - task8 choice=4, state=HAS_RESULT
+2025-12-15 16:52:06,005 - INFO - result shown

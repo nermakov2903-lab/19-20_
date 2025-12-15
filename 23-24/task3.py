@@ -118,8 +118,10 @@ def task3_fsm():
                     result = rotate_matrix_algo(matrix, direction)
                     print(msgs["rotation_done"])
                     state = "HAS_RESULT"
+                    logger.info(f"rotation: {direction}")
                 except:
                     print(msgs["input_error"])
+                    logger.info(f"rotation shown")
             elif choice == "4":
                 if result is None:
                     print(msgs["no_result"])

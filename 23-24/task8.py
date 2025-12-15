@@ -91,5 +91,10 @@ def task8_fsm():
                 result = count_common_with_reverse(a, b)
                 print(msgs["algorithm_done"])
                 state = "HAS_RESULT"
+                logger.info(f"algoritm complete")
             elif choice == "4":
-                print("Результат:", result if result else msgs["no_result"])
+                if result is None:
+                    print(msgs["no_result"])
+                else:
+                    print("Результат:", result)
+                logger.info(f"result shown")
