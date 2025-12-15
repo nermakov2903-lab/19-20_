@@ -1,6 +1,23 @@
-# task8.py
 """
-Task8 as FSM: NO_DATA / HAS_DATA / HAS_RESULT
+Task 8 — подсчёт общих чисел между двумя массивами с учётом реверса.
+
+Модуль реализует локальный FSM с состояниями NO_DATA / HAS_DATA / HAS_RESULT.
+Функция count_common_with_reverse() выполняет логику счёта, функция task8_menu()
+запускает интерактивное меню.
+
+Публичные API
+--------------
+count_common_with_reverse(array1, array2)
+    Подсчитать количество совпадающих элементов с учётом реверса.
+
+task8_menu()
+    Интерактивное меню задачи 8.
+
+Пример
+-------
+>>> from task8 import count_common_with_reverse
+>>> count_common_with_reverse([12, -34], [21, -43])
+2
 """
 import random
 from logger import logger
@@ -115,6 +132,13 @@ TRANSITIONS = {
 }
 
 def task8_menu():
+     """
+    Запустить меню задачи 8 (локальный FSM).
+
+    Notes
+    -----
+    Контейнер состояния: 'a', 'b', 'result'.
+    """
     state_container = {"a": None, "b": None, "result": None}
     state = "NO_DATA"
     while True:

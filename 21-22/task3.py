@@ -1,20 +1,33 @@
-# task3.py
 """
-Task3 реализован как конечный автомат (FSM) с состояниями:
-    NO_DATA, HAS_DATA, HAS_RESULT
+Task 3 — поворот матрицы (модуль/подменю) в стиле конечного автомата.
 
-Пункты меню:
-1. Ввести матрицу вручную
-2. Сгенерировать случайную матрицу
-3. Выполнить поворот
-4. Показать результат
-5. Назад
-6. Отключить логирование
+Модуль реализует локальный конечный автомат для задачи 3 с тремя состояниями:
+'NO_DATA', 'HAS_DATA', 'HAS_RESULT'. Меню позволяет:
+- ввести матрицу вручную,
+- сгенерировать случайную матрицу,
+- выполнить поворот (clockwise / counterclockwise),
+- показать результат,
+- вернуться в главное меню,
+- отключить логирование.
 
-Файл использует:
-- logger из logger.py
-- MESSAGES["task3"] для текстов меню/ошибок
-- исключения DataNotSetError, InvalidValueError
+Публичные API
+--------------
+task3_menu()
+    Запускает локальный цикл меню (FSM). Возвращает управление в caller при выборе "Назад".
+
+Реализованные вспомогательные функции
+------------------------------------
+rotate_matrix_algo(matrix, direction='clockwise')
+    Повернуть матрицу на 90 градусов в указанном направлении.
+
+generate_random_matrix(n, m, low=0, high=9)
+    Сгенерировать случайную матрицу n x m.
+
+Пример
+------
+>>> from task3 import task3_menu
+>>> task3_menu()
+(интерактивное меню)
 """
 
 import random
@@ -24,9 +37,7 @@ from exceptions import DataNotSetError, InvalidValueError
 
 msgs = MESSAGES["task3"]
 
-# -----------------------------
-# Алгоритмы / вспомогательные
-# -----------------------------
+# Алгоритмы / вспомогательные-
 def rotate_matrix_algo(matrix, direction="clockwise"):
     """Поворачивает матрицу на 90 градусов по/против часовой стрелки."""
     if matrix is None:
@@ -52,7 +63,6 @@ def _print_matrix(matrix, title="Матрица"):
 
 # -----------------------------
 # Action handlers (работают с контейнером состояния)
-# -----------------------------
 def _input_matrix(state_container):
     """Ввод матрицы вручную. Сохраняет в state_container['data'] и сбрасывает result."""
     try:
@@ -117,15 +127,11 @@ def _show_result(state_container):
         _print_matrix(result, "Результат")
         logger.info("task3: result shown")
 
-def _disable_logging(state_container):
-    logger.setLevel("CRITICAL")
-    print("Логирование отключено")
-    logger.critical("task3 logging disabled")
-
 def _back(state_container):
     logger.info("task3: back requested (return to main)")
 
-# Action map: имя -> функция
+#словарь действий (имена → функции)
+#handler - Это функция, которая выполняет одно конкретное действие, соответствующее пункту меню(внутри словаря)
 ACTION_MAP = {
     "input_matrix": _input_matrix,
     "generate_matrix": _generate_matrix,
@@ -137,7 +143,8 @@ ACTION_MAP = {
 
 # -----------------------------
 # TRANSITIONS: state -> { choice -> { action / error / next } }
-# -----------------------------
+#словарь состояний
+#action - метки, по которому FSM выбирает нужный handler(внутри словаря)
 TRANSITIONS = {
     "NO_DATA": {
         "1": {"action": "input_matrix", "next": "HAS_DATA"},
@@ -169,9 +176,23 @@ TRANSITIONS = {
 # Меню-цикл
 # -----------------------------
 def task3_menu():
-    """
-    Запускает FSM-меню для задания 3.
-    Возвращает управление в вызывающий (main) при выборе '5' (BACK).
+   """
+    Запустить меню задачи 3 (локальный FSM).
+
+    Поведение
+    ---------
+    Цикл отображает пункты меню (MESSAGES['task3']['menu']), читает выбор и по таблице
+    TRANSITIONS вызывает соответствующий action из ACTION_MAP. При выборе "5" (Back)
+    функция возвращает управление в вызывающий код (обычно main).
+
+    Returns
+    -------
+    None
+
+    Raises
+    ------
+    DataNotSetError
+        Если попытаться выполнить поворот без данных.
     """
     state_container = {"data": None, "result": None}
     state = "NO_DATA"

@@ -1,7 +1,36 @@
-# task4.py
 """
-Task4 as a small FSM with states:
-    NO_DATA, HAS_DATA, HAS_RESULT
+Task 4 — операции над большими числами, представленных массивом цифр.
+
+Модуль реализует локальный автомат с состояниями 'NO_DATA', 'HAS_DATA', 'HAS_RESULT'.
+Пункты меню:
+- ввод массивов вручную,
+- генерация массивов случайно,
+- выполнение операции ('add' или 'sub'),
+- показ результата,
+- назад,
+- отключить логирование.
+
+Публичные API
+--------------
+task4_menu()
+    Запускает интерактивное меню задачи 4.
+
+Вспомогательные функции
+-----------------------
+array_to_int(arr)
+    Преобразует массив цифр в целое число.
+
+int_to_array(num)
+    Преобразует целое число в массив цифр.
+
+big_number_operation(a, b, op)
+    Выполняет сложение или вычитание массивов-чисел.
+
+Примеры
+-------
+>>> from task4 import task4_menu
+>>> task4_menu()
+(интерактивно)
 """
 import random
 from logger import logger
@@ -114,6 +143,17 @@ TRANSITIONS = {
 }
 
 def task4_menu():
+    """
+    Запустить меню задачи 4 (локальный FSM).
+
+    Notes
+    -----
+    Контейнер состояния хранит keys: 'a', 'b', 'result'.
+
+    Returns
+    -------
+    None
+    """
     # local container holds a, b, result
     state_container = {"a": None, "b": None, "result": None}
     state = "NO_DATA"

@@ -106,20 +106,6 @@ class MatrixServer(threading.Thread):
 
             logger.info(f"Сервер {client}: получен запрос на {self._task_name(task)}")
 
-            # # Печать входных данных в лог
-            # if task == 'rotate':
-            #     logger.info(f"Сервер {client}: входная матрица:")
-            #     for row in data:
-            #         logger.info(row)
-            # elif task == 'bigint':
-            #     a = data.get('a')
-            #     b = data.get('b')
-            #     logger.info(f"Сервер {client}: входные большие числа (массивы цифр): A={a} B={b}")
-            # elif task == 'common':
-            #     a = data.get('a')
-            #     b = data.get('b')
-            #     logger.info(f"Сервер {client}: входные массивы для поиска общих чисел: A={a} B={b}")
-
             # эмуляция времени обработки
             process_time = random.uniform(0.6, 2.2)
             time.sleep(process_time)
@@ -165,23 +151,3 @@ class MatrixServer(threading.Thread):
             'common': 'поиск общих чисел'
         }
         return mapping.get(task_key, task_key)
-
-    # def _print_result(self, task, result):
-    #     if task == 'rotate':
-    #         logger.info("Результат поворота:")
-    #         if isinstance(result, list):
-    #             for row in result:
-    #                 logger.info(row)
-    #         else:
-    #             logger.info(result)
-    #     elif task == 'bigint':
-    #         logger.info("Результат операции (цифры msb..lsb): %s", result)
-    #         try:
-    #             num = int(''.join(map(str, result)))
-    #             logger.info("Результат как число: %s", num)
-    #         except Exception:
-    #             pass
-    #     elif task == 'common':
-    #         logger.info("Результат подсчёта общих чисел: %s", result)
-    #     else:
-    #         logger.info("Результат: %s", result)
