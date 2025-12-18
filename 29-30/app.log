@@ -1,0 +1,146 @@
+2025-12-15 16:47:22,429 - INFO - MAIN choice: 1
+2025-12-15 16:47:23,575 - INFO - task3 choice=2, state=NO_DATA
+2025-12-15 16:47:26,616 - INFO - task3 choice=3, state=HAS_DATA
+2025-12-15 16:47:30,517 - INFO - rotation: clockwise
+2025-12-15 16:47:31,448 - INFO - task3 choice=4, state=HAS_RESULT
+2025-12-15 16:47:32,760 - INFO - task3 choice=5, state=HAS_RESULT
+2025-12-15 16:47:33,412 - INFO - MAIN choice: 2
+2025-12-15 16:47:34,606 - INFO - task4 choice=2, state=NO_DATA
+2025-12-15 16:47:36,889 - INFO - task4 choice=3, state=HAS_DATA
+2025-12-15 16:47:38,319 - INFO - operation: add
+2025-12-15 16:47:39,767 - INFO - task4 choice=4, state=HAS_RESULT
+2025-12-15 16:47:39,767 - INFO - result shown
+2025-12-15 16:47:41,116 - INFO - task4 choice=5, state=HAS_RESULT
+2025-12-15 16:47:43,379 - INFO - MAIN choice: 3
+2025-12-15 16:47:44,348 - INFO - task8 choice=2, state=NO_DATA
+2025-12-15 16:47:45,546 - INFO - task8 choice=3, state=HAS_DATA
+2025-12-15 16:47:45,546 - INFO - algoritm complete
+2025-12-15 16:47:47,472 - INFO - task8 choice=4, state=HAS_RESULT
+2025-12-15 16:47:47,472 - INFO - result shown
+2025-12-15 16:47:57,035 - INFO - task8 choice=1, state=HAS_RESULT
+2025-12-15 16:51:01,345 - INFO - MAIN choice: 3
+2025-12-15 16:51:02,047 - INFO - task8 choice=1, state=NO_DATA
+2025-12-15 16:51:13,582 - INFO - task8 choice=3, state=HAS_DATA
+2025-12-15 16:51:13,582 - INFO - algoritm complete
+2025-12-15 16:51:15,263 - INFO - task8 choice=4, state=HAS_RESULT
+2025-12-15 16:51:15,263 - INFO - result shown
+2025-12-15 16:51:47,632 - INFO - MAIN choice: 3
+2025-12-15 16:51:51,208 - INFO - task8 choice=1, state=NO_DATA
+2025-12-15 16:52:04,699 - INFO - task8 choice=3, state=HAS_DATA
+2025-12-15 16:52:04,699 - INFO - algoritm complete
+2025-12-15 16:52:06,005 - INFO - task8 choice=4, state=HAS_RESULT
+2025-12-15 16:52:06,005 - INFO - result shown
+2025-12-18 00:59:52,683 - INFO - Start polling
+2025-12-18 00:59:53,699 - INFO - Run polling for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:00:19,235 - INFO - Update id=509766493 is handled. Duration 468 ms by bot id=8473375695
+2025-12-18 01:00:20,890 - INFO - Update id=509766494 is handled. Duration 235 ms by bot id=8473375695
+2025-12-18 01:00:23,388 - INFO - Update id=509766495 is handled. Duration 250 ms by bot id=8473375695
+2025-12-18 01:00:33,613 - INFO - Update id=509766496 is handled. Duration 438 ms by bot id=8473375695
+2025-12-18 01:02:43,391 - INFO - Update id=509766497 is handled. Duration 188 ms by bot id=8473375695
+2025-12-18 01:03:54,011 - INFO - Polling stopped
+2025-12-18 01:03:54,011 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-18 01:03:54,011 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8473375695)
+2025-12-18 01:03:54,273 - INFO - Polling stopped for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:03:56,161 - INFO - Start polling
+2025-12-18 01:03:56,605 - INFO - Run polling for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:03:59,906 - INFO - Update id=509766498 is handled. Duration 421 ms by bot id=8473375695
+2025-12-18 01:04:00,933 - INFO - Update id=509766499 is handled. Duration 202 ms by bot id=8473375695
+2025-12-18 01:04:02,164 - INFO - Update id=509766500 is handled. Duration 188 ms by bot id=8473375695
+2025-12-18 01:05:49,039 - INFO - Update id=509766501 is handled. Duration 406 ms by bot id=8473375695
+2025-12-18 01:05:54,286 - INFO - Update id=509766502 is handled. Duration 172 ms by bot id=8473375695
+2025-12-18 01:05:56,583 - INFO - Update id=509766503 is handled. Duration 188 ms by bot id=8473375695
+2025-12-18 01:08:03,575 - INFO - Polling stopped
+2025-12-18 01:08:03,575 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-18 01:08:03,575 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8473375695)
+2025-12-18 01:08:03,828 - INFO - Polling stopped for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:08:05,943 - INFO - Start polling
+2025-12-18 01:08:07,108 - INFO - Run polling for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:08:08,676 - INFO - Update id=509766504 is handled. Duration 375 ms by bot id=8473375695
+2025-12-18 01:08:09,669 - INFO - Update id=509766505 is handled. Duration 172 ms by bot id=8473375695
+2025-12-18 01:08:10,309 - INFO - Update id=509766506 is not handled. Duration 0 ms by bot id=8473375695
+2025-12-18 01:08:10,309 - ERROR - Cause exception while process update id=509766506 by bot id=8473375695
+KeyError: 'matrix'
+Traceback (most recent call last):
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\nicki\OneDrive\Документы\informatika\python\23-24\bot.py", line 143, in task3_generate
+    await message.answer(f"Результат:\n" + "\n".join(map(str, data["matrix"])), reply_markup=task3_kb)
+                                                              ~~~~^^^^^^^^^^
+KeyError: 'matrix'
+2025-12-18 01:08:19,162 - INFO - Update id=509766507 is handled. Duration 250 ms by bot id=8473375695
+2025-12-18 01:08:23,386 - INFO - Update id=509766508 is handled. Duration 218 ms by bot id=8473375695
+2025-12-18 01:08:27,857 - INFO - Update id=509766509 is handled. Duration 172 ms by bot id=8473375695
+2025-12-18 01:08:29,739 - INFO - Update id=509766510 is handled. Duration 172 ms by bot id=8473375695
+2025-12-18 01:08:48,705 - INFO - Update id=509766511 is handled. Duration 202 ms by bot id=8473375695
+2025-12-18 01:08:52,532 - INFO - Update id=509766512 is handled. Duration 171 ms by bot id=8473375695
+2025-12-18 01:08:55,122 - INFO - Update id=509766513 is handled. Duration 172 ms by bot id=8473375695
+2025-12-18 01:08:56,586 - INFO - Update id=509766514 is handled. Duration 202 ms by bot id=8473375695
+2025-12-18 01:09:32,731 - INFO - Polling stopped
+2025-12-18 01:09:32,731 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-18 01:09:32,731 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8473375695)
+2025-12-18 01:09:32,986 - INFO - Polling stopped for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:09:34,875 - INFO - Start polling
+2025-12-18 01:09:35,891 - INFO - Run polling for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:09:38,351 - INFO - Update id=509766515 is handled. Duration 436 ms by bot id=8473375695
+2025-12-18 01:09:39,461 - INFO - Update id=509766516 is handled. Duration 202 ms by bot id=8473375695
+2025-12-18 01:09:40,872 - INFO - Update id=509766517 is handled. Duration 188 ms by bot id=8473375695
+2025-12-18 01:09:42,470 - INFO - Update id=509766518 is handled. Duration 311 ms by bot id=8473375695
+2025-12-18 01:09:44,210 - INFO - Update id=509766519 is handled. Duration 171 ms by bot id=8473375695
+2025-12-18 01:09:57,409 - INFO - Update id=509766520 is handled. Duration 219 ms by bot id=8473375695
+2025-12-18 01:10:01,677 - INFO - Update id=509766521 is handled. Duration 186 ms by bot id=8473375695
+2025-12-18 01:10:04,196 - INFO - Update id=509766522 is handled. Duration 202 ms by bot id=8473375695
+2025-12-18 01:10:05,881 - INFO - Update id=509766523 is handled. Duration 250 ms by bot id=8473375695
+2025-12-18 01:10:22,789 - INFO - Update id=509766524 is handled. Duration 203 ms by bot id=8473375695
+2025-12-18 01:14:32,649 - INFO - Polling stopped
+2025-12-18 01:14:32,650 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-18 01:14:32,650 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8473375695)
+2025-12-18 01:14:32,912 - INFO - Polling stopped for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:14:34,918 - INFO - Start polling
+2025-12-18 01:14:35,904 - INFO - Run polling for bot @ttp25_26_bot id=8473375695 - '25-26'
+2025-12-18 01:14:38,100 - INFO - Update id=509766525 is handled. Duration 453 ms by bot id=8473375695
+2025-12-18 01:14:39,068 - INFO - Update id=509766526 is handled. Duration 327 ms by bot id=8473375695
+2025-12-18 01:14:45,552 - INFO - Update id=509766527 is handled. Duration 234 ms by bot id=8473375695
+2025-12-18 01:14:50,237 - INFO - Update id=509766528 is handled. Duration 202 ms by bot id=8473375695
+2025-12-18 01:14:54,414 - INFO - Update id=509766529 is handled. Duration 250 ms by bot id=8473375695
+2025-12-18 01:14:56,458 - INFO - Update id=509766530 is handled. Duration 234 ms by bot id=8473375695
+2025-12-18 01:40:40,849 - INFO - Polling stopped
+2025-12-18 01:40:40,849 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-18 01:40:40,849 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8473375695)
+2025-12-18 01:40:41,112 - INFO - Polling stopped for bot @ttp25_26_bot id=8473375695 - '25-26'
