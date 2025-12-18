@@ -55,6 +55,7 @@ def main_fsm():
         choice = yield
         logger.info(f"MAIN choice: {choice}")
 
+        #вложенность автоматов реализуется через yield from
         if choice == "1":
             yield from task3_fsm()
         elif choice == "2":
@@ -73,6 +74,7 @@ def main():
 
     while True:
         try:
+            #корутина сохраняет своё состояние между вызовами send()
             choice = input("Выберите пункт: ").strip()
             fsm.send(choice)
         except StopIteration:
